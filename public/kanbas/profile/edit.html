@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anant Moudgalya's Profile</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- First Column - Navigation Links -->
+        <td>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="../home.html">Courses</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Commons</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </td>
+
+        <!-- Second Column - Profile Links -->
+        <td>
+          <ul>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">ePortfolios</a></li>
+            <li><a href="#">Shared Content</a></li>
+            <li><a href="#">The Hub</a></li>
+            <li><a href="#">Qwickly Course Tools</a></li>
+            <li><a href="#">Global Announcements</a></li>
+          </ul>
+        </td>
+
+        <!-- Third Column - Edit Profile -->
+        <td>
+          <h3>Anant Moudgalya</h3>
+          <form>
+            <div style="display: flex; align-items: center">
+              <label for="name">Name:*</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value="Anant Moudgalya"
+              />
+              <label for="pronouns">Pronouns:</label>
+              <select id="pronouns" name="pronouns">
+                <option value="none">None</option>
+                <option value="he">He/Him</option>
+                <option value="she">She/Her</option>
+                <option value="they">They/Them</option>
+                <!-- Add more pronoun options as needed -->
+              </select>
+            </div>
+            <br/>
+            <div style="display: flex; align-items: center">
+              <label for="title">Title:</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Enter your title"
+              />
+            </div>
+            <p>
+              <b>Contact:</b><br />
+              No registered services, you can add some on the settings page
+            </p>
+            <p><b>Biography:</b><br /></p>
+
+            <p>
+              Student, Software Engineer, Data and Distributed Systems
+              Enthusiast
+            </p>
+            <textarea
+              id="biography"
+              name="biography"
+              placeholder="Student, Software Engineer, Data and Distributed Systems Enthusiast"
+            ></textarea>
+            <p>
+              <b>Links:</b><br />
+              <a
+                href="https://www.linkedin.com/in/anant-moudgalya/"
+                target="_blank"
+                >LinkedIn Profile</a
+              >
+            </p>
+            <div style="display: flex; flex-direction: column">
+              <div style="display: flex; gap: 200px">
+                <h4>Title</h4>
+                <h4>URL</h4>
+              </div>
+              <div style="display: flex; gap: 30px">
+                <input placeholder="Youtube" />
+                &rarr;
+                <input placeholder="https://www.youtube.com" />
+              </div>
+            </div>
+            <button>Add another link</button>
+            <div>
+              <button type="button" onclick="window.location.href='index.html'">
+                Cancel Editing
+              </button>
+              <button type="button" onclick="window.location.href='index.html'">
+                Save Profile
+              </button>
+            </div>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
