@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanbas Assignments</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- First Column - Navigation Links -->
+        <td>
+          <ul>
+            <li><a href="../profile/index.html">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="../home.html">Courses</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Commons</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </td>
+
+        <!-- Second Column - Course Navigation Sidebar -->
+        <td>
+          <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="index.html">Assignments</a></li>
+            <li><a href="../grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </td>
+
+        <!-- Third Column - Assignments Screen -->
+        <td>
+            <td>
+                <h4>Assignment Name</h4>
+                <input type="text" placeholder="A1 - ENV + HTML" />
+            
+                <br/><br/>
+                <textarea id="assignmentDescription" placeholder="This is assignment description"></textarea>
+                
+                <br/><br/>
+                <label for="points">Points:</label><br/>
+                <input type="number" id="points" placeholder="100" />
+            
+                <p>Assignment Group</p>
+                <select>
+                    <option>ASSIGNMENTS</option>
+                </select>
+            
+                <p>Display Grade as</p>
+                <select>
+                    <option>Percentage</option>
+                </select>
+            
+                <p>Submission Type</p>
+                <select>
+                    <option>Online</option>
+                </select>
+            
+                <p>Online Entry Options</p>
+                <input type="checkbox" id="textEntry" name="textEntry" />
+                <label for="textEntry">Text Entry</label><br />
+                <input type="checkbox" id="websiteURL" name="websiteURL" />
+                <label for="websiteURL">Website URL</label><br />
+                <input type="checkbox" id="mediaRecordings" name="mediaRecordings" />
+                <label for="mediaRecordings">Media Recordings</label><br />
+                <input type="checkbox" id="studentAnnotation" name="studentAnnotation" />
+                <label for="studentAnnotation">Student Annotation</label><br />
+                <input type="checkbox" id="fileUploads" name="fileUploads" />
+                <label for="fileUploads">File Uploads</label><br />
+            
+                <p>Submission Attempts</p>
+                <select>
+                    <option>Unlimited</option>
+                </select>
+            
+                <p>Plagiarism Review</p>
+                <select>
+                    <option>None</option>
+                </select>
+                
+                <br/><br/>
+                <label for="groupAssignment">Group Assignment</label><br/>
+                <input type="checkbox" id="groupAssignment" name="groupAssignment">This is a group assignment</input>
+            
+                <br/><br/>
+                <label for="peerReviews">Peer Reviews</label><br/>
+                <input type="checkbox" id="peerReviews" name="peerReviews" >Require Peer Reviews</input>
+            
+                <p>Assign</p>
+                <label for="assignTo">Assign To:</label><br/>
+                <select id="assignTo">
+                    <option>Everyone</option>
+                </select>
+            
+                <p>Due</p>
+                <input type="date" />
+            
+                <p>Available From</p>
+                <input type="date" />
+            
+                <p>Until</p>
+                <input type="date" />
+            
+                <br/><br/>
+                <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+                <button type="button" onclick="window.location.href='index.html'">Save</button>
+            </td>
+            
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
