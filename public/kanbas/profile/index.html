@@ -1,77 +1,106 @@
-<!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Anant Moudgalya's Profile</title>
-  </head>
-  <body>
-    <table>
-      <tr>
+<head>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="profile.css"
+    rel="stylesheet"/>
 
-        <!-- First Column - Navigation Links -->
-        <td>
-            <ul>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="../home.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
+<head>
+<body>
+    <div class = "row">
+        <div class = "col-1">
+    <div class="list-group">
+        <img class = "list-group-item list-group-item-action"
+                src="/images/NortheasternLogo.png"/> 
+        <div class="list-group-item list-group-item-action list-group-item active">
+            <a href= "/kanbas/account/account.html" class="list-group-item-action">
+            <i class= "fa fa-user fa-2x" style="color: gray;"></i> <br/> Account </a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="/kanbas/dashboard/dashboard.html" class="list-group-item-action"> 
+            <i class="fa fa-tachometer-alt fa-2x" style="color: #ff0000;"></i> Dashboard</a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="/kanbas/courses/courses.html" class="list-group-item-action">
+            <i class="fa fa-book fa-2x" style="color: #ff0000;"></i> Courses</a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item-action"> 
+            <i class="fa fa-calendar-alt fa-2x" style="color: #ff0000;"></i>
+            Calendar</a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item-action"> 
+            <i class="fa fa-envelope-open-text fa-2x" style="color: #ff0000;"></i>Inbox</a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item-action">
+            <i class="fa fa-clock fa-2x" style="color: #ff0000;"></i>History
+            </a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item-action">
+            <i class="fa fa-tv fa-2x" style="color: #ff0000;"></i>Studio</a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item-action"> 
+            <i class="fa fa-arrow-circle-right fa-2x" style="color: #ff0000;"></i>Commons</a>
+        </div>
+        <div class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item-action">
+            <i class="fa fa-question-circle fa-2x" style="color: #ff0000;"></i> <br/> Help</a>
+        </div>
+        </div>
+      </div>
 
-        <!-- Second Column - Profile Links -->
-        <td>
-          <ul>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">ePortfolios</a></li>
-            <li><a href="#">Shared Content</a></li>
-            <li><a href="#">The Hub</a></li>
-            <li><a href="#">Qwickly Course Tools</a></li>
-            <li><a href="#">Global Announcements</a></li>
-          </ul>
-        </td>
+      <div class ="col-2 account">
+        <div class="list-group-account">
+            <li class = "list-group-item-action-account list-group-item-account account"><a href= "#"> Notifications </a></li>
+            <li class = "list-group-item-action-account list-group-item-account account active"><a href="/kanbas/profile/index.html"> Profile</a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Files</a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Settings</a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> ePortfolios</a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#">Shared Content </a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> The Hub </a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Qwickly Course Tools</a></li>
+            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Global Announcements</a></li>
+        </div>
+      </div>
 
-        <!-- Second Column - Profile Information -->
-        <td>
-          <h4>Anant Moudgalya's Profile</h4>
-          <hr />
-          <h1
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            Anant Moudgalya
-            <button onclick="window.location.href='edit.html'">
-              &#9998; Edit Profile
-            </button>
-          </h1>
-
-          <p>
-            <b>Contact</b><br />
-            No registered services, you can add some on the settings page
-          </p>
-
-          <p>
-            <b>Biography:</b><br />
-            Student, Software Engineer, Data and Distributed Systems Enthusiast
-          </p>
-
-          <p>
-            <b>Links:</b><br />
-            <a href="https://www.linkedin.com/in/anant-moudgalya/"
-              >LinkedIn Profile</a
-            >
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
+      <div class ="col"> 
+        <div class = "list-group-profile">
+            <i class="fa fa-user fa-8x" style="color: gray" aria-hidden="true"></i>
+        <div class="row" style="padding-bottom: 20px;">
+            <h1> Anant Moudgalya</h1>
+        </div>
+        <div class = "row" style="padding-bottom: 20px;">
+            <h3>
+                Contact
+            </h3>
+            <p> No registered services, you can add some on the <a href="#"> settings</a> page.</p>
+        </div>
+        <div class = "row" style="padding-bottom: 20px;">
+            <h3>
+                Biography
+            </h3>
+            <p> Student, Software Engineer, Data and Distributed Systems Enthusiast</p>
+        </div>
+            <h3>
+                Links
+            </h3>
+            <p> <a href="https://www.linkedin.com/in/anant-moudgalya/"
+                >LinkedIn Profile</a
+              ></p>
+        </div>
+      </div>
+    
+      <div class ="col-2"> 
+        <div class = "float-end">
+            <a href="/kanbas/profile/edit.html"> <button> <i class="fas fa-pencil-alt" style="color: #525252;"></i> Edit Profile</button> </a>
+        </div>
+      </div>
+      
+    </div>
+</body>
 </html>
