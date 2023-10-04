@@ -1,8 +1,3 @@
-/* p {
-    background-color: blue;
-    color: white;
-} */
-
 p#id-selector-1 {
     background-color: red;
     color: white;
@@ -17,16 +12,6 @@ p#id-selector-2 {
     background-color: yellow;
     color: blue;
 }
-
-/* .selector2 .selector3 {
-    background-color: red;
-    color: white;
-}
-
-.selector2 > .selector3 > .selector4 {
-    background-color: yellow;
-    color: blue;
-} */
 
 .selector-1 .selector-3 {
     background-color: red;
