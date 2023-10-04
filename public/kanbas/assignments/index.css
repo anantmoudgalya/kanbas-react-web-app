@@ -93,7 +93,7 @@ body {
 }
 
 .df-flex-assignments-navbar {
-  margin-left: 10px;
+  margin-left: 20px;
   position: fixed;
 }
 
@@ -103,6 +103,7 @@ body {
 
 .df-flex-assignments-navbar li {
   list-style: none;
+  padding: 5px;
 }
 
 .df-flex-assignments-navbar a {
