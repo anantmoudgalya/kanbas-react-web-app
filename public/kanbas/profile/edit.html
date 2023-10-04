@@ -1,129 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kanbas</title>
+    <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
+  </head>
 
-<html>
-<head>
-    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-    <link href="edit.css"
-    rel="stylesheet"/>
+  <body>
+    <div class="df-main-layout">
+      <div class="df-flex-navigation">
+        <ul>
+          <li class="df-background-black mb-2 mt-2">
+            <img src="/images/NortheasternLogo.png" />
+          </li>
 
-<head>
-<body>
-    <div class = "row">
-        <div class = "col-1">
-    <div class="list-group">
-        <img class = "list-group-item list-group-item-action"
-                src="/images/NortheasternLogo.png"/> 
-        <div class="list-group-item list-group-item-action list-group-item active">
-            <a href= "/kanbas/account/account.html" class="list-group-item-action">
-            <i class= "fa fa-user fa-2x" style="color: gray;"></i> </br> Account </a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="/kanbas/dashboard/dashboard.html" class="list-group-item-action"> 
-            <i class="fa fa-tachometer-alt fa-2x" style="color: #ff0000;"></i> Dashboard</a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="/kanbas/courses/courses.html" class="list-group-item-action">
-            <i class="fa fa-book fa-2x" style="color: #ff0000;"></i> Courses</a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="#" class="list-group-item-action"> 
-            <i class="fa fa-calendar-alt fa-2x" style="color: #ff0000;"></i>
-            Calendar</a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="#" class="list-group-item-action"> 
-            <i class="fa fa-envelope-open-text fa-2x" style="color: #ff0000;"></i>Inbox</a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="#" class="list-group-item-action">
-            <i class="fa fa-clock fa-2x" style="color: #ff0000;"></i>History
-            </a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="#" class="list-group-item-action">
-            <i class="fa fa-tv fa-2x" style="color: #ff0000;"></i>Studio</a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="#" class="list-group-item-action"> 
-            <i class="fa fa-arrow-circle-right fa-2x" style="color: #ff0000;"></i>Commons</a>
-        </div>
-        <div class="list-group-item list-group-item-action">
-            <a href="#" class="list-group-item-action">
-            <i class="fa fa-question-circle fa-2x" style="color: #ff0000;"></i> </br> Help</a>
-        </div>
-        </div>
+          <li class="df-background-white">
+            <a class="df-color-red" href="account.html"
+              ><i class="fa fa-user fa-2x df-background-grey" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-background-white df-home-nav-text">
+            <a class="df-color-red" href="account.html">Account</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../dashboard/dashboard.html"
+              ><i
+                class="fa fa-tachometer fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../dashboard/dashboard.html">Dashboard</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../courses/home.html"
+              ><i class="fa fa-book fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../courses/home.html">Courses</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-calendar fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Calendar</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-inbox fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Inbox</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-history fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">History</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-desktop fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Studio</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-arrow-circle-o-right fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Commons</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-question-circle fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Help</a>
+          </li>
+        </ul>
       </div>
 
-      <div class ="col-md account"> 
-        <div class="list-group-account">
-            <li class = "list-group-item-action-account list-group-item-account account"><a href= "#"> Notifications </a></li>
-            <li class = "list-group-item-action-account list-group-item-account account active"><a href="/kanbas/profile/index.html"> Profile</a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Files</a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="/kanbas/settings/course_details.html"> Settings</a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> ePortfolios</a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="#">Shared Content </a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> The Hub </a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Qwickly Course Tools</a></li>
-            <li class = "list-group-item-action-account list-group-item-account account"><a href="#"> Global Announcements</a></li>
+      <div class="df-flex-account">
+        <div class="df-account-header ms-2">
+          <i class="fa fa-bars" aria-hidden="true"
+            ><span class="df-profile-name df-text-larger"
+              >Anant Moudgalya's Profile</span
+            ></i
+          >
+          <hr />
         </div>
+        <!-- Flex-row -->
+        <div class="df-flex-account-options">
+          <div class="df-account-navbar">
+            <ul>
+              <li><a class="df-color-red" href="#">Notifications</a></li>
+              <li class="df-account-active">
+                <a class="df-color-black" href="index.html">Profile</a>
+              </li>
+              <li><a class="df-color-red" href="#">Files</a></li>
+              <li><a class="df-color-red" href="#">Settings</a></li>
+              <li><a class="df-color-red" href="#">ePortfolios</a></li>
+              <li><a class="df-color-red" href="#">Shared Content</a></li>
+              <li><a class="df-color-red" href="#">The Hub</a></li>
+              <li><a class="df-color-red" href="#">Qwickly Course Tools</a></li>
+              <li><a class="df-color-red" href="#">Global Announcements</a></li>
+            </ul>
+          </div>
 
-        <div class ="col-md"> 
-            <div class = "list-group-profile">
-                <i class="fa fa-user fa-8x" style="color: gray" aria-hidden="true"></i> </br>
-                <label for="name-input" style = "font-size:large;" class="form-label">Name:*</label>
-                <input type="text" class="form-control" id="name" placeholder="Anant Moudgalya"></br>
-                <label for="pronouns-select" style = "font-size:large;" class="form-label">Pronouns:</label>
-                <select class="form-select">
-                    <option selected>None</option>
-                </select></br>
-            <h3> Contact </h3>
-            <p> No registered services, you can add some on the <a href="/kanbas/settings/course_details.html"> Settings</a> page.</p>
-            <br> 
-            <h3> Biography </h3>
-            <form id="textarea">
-                <textarea class="form-control" id="bioTextArea" rows="5">Student, Software Engineer, Data and Distributed Systems Enthusiast
-                </textarea>
+          <div class="df-account-profile-edit col-6">
+            <i class="fa fa-user fa-5x df-background-grey" aria-hidden="true"></i>
+            <form>
+              <div class="form-group row mb-3">
+                <label for="profile-name" class="form-label">Name:*</label>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="profile-name"
+                    value="Anant Moudgalya"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-3">
+                <label for="profile-pronoun" class="form-label"
+                  >Pronouns:</label
+                >
+                <div>
+                  <select class="form-select profile-pronoun">
+                    <option value="none" selected>None</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row mb-3">
+                <label for="profile-title" class="form-label">Title:</label>
+                <div>
+                  <input type="text" class="form-control profile-title" />
+                </div>
+              </div>
             </form>
-        </br>
-            <h3> Links </h3>
-            <div class="row">
-                <div class="col">
-                  <h6 style="text-align: center;"> Title</h6>
-                </div>
-                <div class="col">
-                    <h6 style="text-align: center;">URL</h6>
-                </div>
+            <br />
+
+            <div class="profile-contact-info">
+              <span class="fg-size-larger">Contact</span> <br />
+              No registered services, you can add some on the settings page.
             </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" id="link-name" placeholder="LinkedIn">
-                </div>
-                <div class="col">
-                    <input type="url" class="form-control" id="link-url" placeholder="https://www.linkedin.com/in/anant-moudgalya/">
-                </div>
+            <br />
+
+            <div class="mb-3 row">
+              <label for="profile-bio" class="form-label fg-size-larger">
+                Biography</label
+              >
+              <div class="col-sm-10">
+                <textarea class="form-control" id="profile-bio" rows="3">
+Student, Software Engineer, Data and Distributed Systems Enthusiast</textarea
+                >
+              </div>
             </div>
-        </br>
-                <button type="button" style ="width: 200px; height: 40px;"class="btn btn-secondary">Add another link</button>
-    </br>
-    </br>
-    <div class = "row">
-    <div class = "col" style= "justify-content: right;">
-                <a href="/kanbas/profile/index.html"><button type="button" style ="width: 150px; height: 40px;"class="btn btn-secondary">Cancel</button></a>
-     </div>
-     <div class = "col" style= "justify-content: right;">
-                <a href="/kanbas/profile/index.html"><button type="button" style ="width: 150px; height: 40px;"class="btn btn-danger">Save Profile</button></a>
-    </div>
-    </div>
-    </div>
-    
+            <br />
+
+            <div class="profile-links">
+              <span class="fg-size-larger">Links</span>
+
+              <div class="row" style="text-align: center">
+                <div class="col-5">Title</div>
+                <div class="col"></div>
+                <div class="col-5">URL</div>
+                <div class="col"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="LinkedIn Profile"
+                  />
+                </div>
+                <div class="col">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="col-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://www.linkedin.com/in/anant-moudgalya/"
+                  />
+                </div>
+                <div class="col">
+                  <i class="fa fa-times df-color-red" aria-hidden="true"></i>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-5">
+                  <button class="btn bg-secondary-subtle">
+                    Add another link
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <div class ="col-md"> 
-            <div class = "float-end">
-                <a href="/kanbas/profile/index.html"> <button> <i class="fas fa-pencil-alt" style="color: #525252;"></i> Cancel Editing</button> </a>
+            <hr />
+
+            <div class="df-edit-profile-footer">
+              <div class="float-end mb-2">
+                <a href="index.html" class="df-color-black df-no-decoration"
+                  ><button class="btn bg-secondary-subtle">Cancel</button></a
+                >
+
+                <a href="index.html" class="df-no-decoration"
+                  ><button class="btn btn-danger">Save Profile</button></a
+                >
+              </div>
             </div>
           </div>
 
+          <div class="abcd">
+            <a class="df-color-white df-no-decoration" href="index.html"
+              ><button class="btn btn-secondary">
+                <i class="fa fa-pencil" aria-hidden="true"></i> Cancel Editing
+              </button></a
+            >
+          </div>
+        </div>
       </div>
-
-
+    </div>
+  </body>
+</html>
