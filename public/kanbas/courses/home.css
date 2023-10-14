@@ -1,0 +1,165 @@
+.df-flex-navigation {
+  width: 77px;
+  background-color: black;
+  height: 100%;
+  position: fixed;
+}
+
+.df-flex-navigation ul {
+  padding-left: 0px;
+}
+
+.df-flex-navigation li {
+  list-style: none;
+  text-align: center;
+}
+
+.df-flex-navigation li img {
+  background-color: black;
+  height: 40px;
+  width: 50px;
+}
+
+.df-main-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.df-flex-navigation a {
+  text-decoration: none;
+  font-size: small;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.df-background-white {
+  background-color: white;
+}
+
+.df-background-grey {
+  color: grey;
+}
+
+.df-background-red {
+  color: red;
+}
+
+.df-color-red {
+  color: red;
+}
+
+.df-color-white {
+  color: white;
+}
+
+.df-home-nav-text {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.df-flex-navigation .df-home-nav-active {
+  background-color: white;
+}
+
+.df-flex-navigation .df-home-nav-active a {
+  color: red;
+}
+
+.df-flex-course-screen {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  left: 75px;
+}
+
+.df-course-nav-active {
+  border-left: 2px solid black;
+  color: black;
+}
+
+.df-courses-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.df-background-lightgray {
+  background-color: lightgray;
+}
+
+.df-flex-courses-navbar {
+  margin-left: 20px;
+  position: fixed;
+}
+
+.df-flex-courses-navbar ul {
+  padding-left: 0px;
+}
+
+.df-flex-courses-navbar li {
+  list-style: none;
+  padding: 5px;
+}
+
+.df-flex-courses-navbar a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.df-flex-course-modules {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 180px;
+}
+
+.df-flex-course-status {
+  position: relative;
+  left: 180px;
+}
+
+.df-list-module-name {
+  background-color: lightgray;
+}
+
+.df-list-module-element span {
+  padding-left: 50px;
+}
+
+.df-color-green {
+  color: green;
+}
+
+.df-flex-course-status {
+  padding-left: 25px;
+}
+
+.df-profile-name {
+  padding-left: 10px;
+}
+
+.df-background-black {
+  background-color: black;
+}
+
+.df-top-navbar {
+  text-align: center;
+}
+
+.df-list-module-element span a {
+  text-decoration: none;
+  color: red;
+}
+
+.df-list-module-title {
+  border-left: 3px solid green;
+}
+
+.df-list-module-element {
+  border-left: 3px solid green;
+}

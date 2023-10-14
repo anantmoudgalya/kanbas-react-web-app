@@ -1,118 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Anant Moudgalya's Profile</title>
+    <meta charset="UTF-8" />
+    <title>Kanbas</title>
+    <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
   </head>
+
   <body>
-    <table>
-      <tr>
-        <!-- First Column - Navigation Links -->
-        <td>
-          <ul>
-            <li><a href="index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../home.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
+    <div class="df-main-layout">
+      <div class="df-flex-navigation">
+        <ul>
+          <li class="df-background-black mb-2 mt-2">
+            <img src="/images/NortheasternLogo.png" />
+          </li>
 
-        <!-- Second Column - Profile Links -->
-        <td>
-          <ul>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="index.html">Profile</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">ePortfolios</a></li>
-            <li><a href="#">Shared Content</a></li>
-            <li><a href="#">The Hub</a></li>
-            <li><a href="#">Qwickly Course Tools</a></li>
-            <li><a href="#">Global Announcements</a></li>
-          </ul>
-        </td>
+          <li class="df-background-white">
+            <a class="df-color-red" href="account.html"
+              ><i class="fa fa-user fa-2x df-background-grey" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-background-white df-home-nav-text">
+            <a class="df-color-red" href="account.html">Account</a>
+          </li>
 
-        <!-- Third Column - Edit Profile -->
-        <td>
-          <h3>Anant Moudgalya</h3>
-          <form>
-            <div style="display: flex; align-items: center">
-              <label for="name">Name:*</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value="Anant Moudgalya"
-              />
-              <label for="pronouns">Pronouns:</label>
-              <select id="pronouns" name="pronouns">
-                <option value="none">None</option>
-                <option value="he">He/Him</option>
-                <option value="she">She/Her</option>
-                <option value="they">They/Them</option>
-                <!-- Add more pronoun options as needed -->
-              </select>
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../dashboard/dashboard.html"
+              ><i
+                class="fa fa-tachometer fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../dashboard/dashboard.html">Dashboard</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../courses/home.html"
+              ><i class="fa fa-book fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../courses/home.html">Courses</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-calendar fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Calendar</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-inbox fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Inbox</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-history fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">History</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-desktop fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Studio</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-arrow-circle-o-right fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Commons</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-question-circle fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="df-flex-account">
+        <div class="df-account-header ms-2">
+          <i class="fa fa-bars" aria-hidden="true"
+            ><span class="df-profile-name df-text-larger"
+              >Anant Moudgalya's Profile</span
+            ></i
+          >
+          <hr />
+        </div>
+        <!-- Flex-row -->
+        <div class="df-flex-account-options">
+          <div class="df-account-navbar">
+            <ul>
+              <li><a class="df-color-red" href="#">Notifications</a></li>
+              <li class="df-account-active">
+                <a class="df-color-black" href="index.html">Profile</a>
+              </li>
+              <li><a class="df-color-red" href="#">Files</a></li>
+              <li><a class="df-color-red" href="#">Settings</a></li>
+              <li><a class="df-color-red" href="#">ePortfolios</a></li>
+              <li><a class="df-color-red" href="#">Shared Content</a></li>
+              <li><a class="df-color-red" href="#">The Hub</a></li>
+              <li><a class="df-color-red" href="#">Qwickly Course Tools</a></li>
+              <li><a class="df-color-red" href="#">Global Announcements</a></li>
+            </ul>
+          </div>
+
+          <div class="df-account-profile-edit col-6">
+            <i class="fa fa-user fa-5x df-background-grey" aria-hidden="true"></i>
+            <form>
+              <div class="form-group row mb-3">
+                <label for="profile-name" class="form-label">Name:*</label>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="profile-name"
+                    value="Anant Moudgalya"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-3">
+                <label for="profile-pronoun" class="form-label"
+                  >Pronouns:</label
+                >
+                <div>
+                  <select class="form-select profile-pronoun">
+                    <option value="none" selected>None</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row mb-3">
+                <label for="profile-title" class="form-label">Title:</label>
+                <div>
+                  <input type="text" class="form-control profile-title" />
+                </div>
+              </div>
+            </form>
+            <br />
+
+            <div class="profile-contact-info">
+              <span class="fg-size-larger">Contact</span> <br />
+              No registered services, you can add some on the settings page.
             </div>
-            <br/>
-            <div style="display: flex; align-items: center">
-              <label for="title">Title:</label>
-              <input
-                type="text"
-                id="title"
-                name="title"
-                placeholder="Enter your title"
-              />
-            </div>
-            <p>
-              <b>Contact:</b><br />
-              No registered services, you can add some on the settings page
-            </p>
-            <p><b>Biography:</b><br /></p>
+            <br />
 
-            <p>
-              Student, Software Engineer, Data and Distributed Systems
-              Enthusiast
-            </p>
-            <textarea
-              id="biography"
-              name="biography"
-              placeholder="Student, Software Engineer, Data and Distributed Systems Enthusiast"
-            ></textarea>
-            <p>
-              <b>Links:</b><br />
-              <a
-                href="https://www.linkedin.com/in/anant-moudgalya/"
-                target="_blank"
-                >LinkedIn Profile</a
+            <div class="mb-3 row">
+              <label for="profile-bio" class="form-label fg-size-larger">
+                Biography</label
               >
-            </p>
-            <div style="display: flex; flex-direction: column">
-              <div style="display: flex; gap: 200px">
-                <h4>Title</h4>
-                <h4>URL</h4>
-              </div>
-              <div style="display: flex; gap: 30px">
-                <input placeholder="Youtube" />
-                &rarr;
-                <input placeholder="https://www.youtube.com" />
+              <div class="col-sm-10">
+                <textarea class="form-control" id="profile-bio" rows="3">
+Student, Software Engineer, Data and Distributed Systems Enthusiast</textarea
+                >
               </div>
             </div>
-            <button>Add another link</button>
-            <div>
-              <button type="button" onclick="window.location.href='index.html'">
-                Cancel Editing
-              </button>
-              <button type="button" onclick="window.location.href='index.html'">
-                Save Profile
-              </button>
+            <br />
+
+            <div class="profile-links">
+              <span class="fg-size-larger">Links</span>
+
+              <div class="row" style="text-align: center">
+                <div class="col-5">Title</div>
+                <div class="col"></div>
+                <div class="col-5">URL</div>
+                <div class="col"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="LinkedIn Profile"
+                  />
+                </div>
+                <div class="col">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="col-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://www.linkedin.com/in/anant-moudgalya/"
+                  />
+                </div>
+                <div class="col">
+                  <i class="fa fa-times df-color-red" aria-hidden="true"></i>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-5">
+                  <button class="btn bg-secondary-subtle">
+                    Add another link
+                  </button>
+                </div>
+              </div>
             </div>
-          </form>
-        </td>
-      </tr>
-    </table>
+
+            <hr />
+
+            <div class="df-edit-profile-footer">
+              <div class="float-end mb-2">
+                <a href="index.html" class="df-color-black df-no-decoration"
+                  ><button class="btn bg-secondary-subtle">Cancel</button></a
+                >
+
+                <a href="index.html" class="df-no-decoration"
+                  ><button class="btn btn-danger">Save Profile</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="abcd">
+            <a class="df-color-white df-no-decoration" href="index.html"
+              ><button class="btn btn-secondary">
+                <i class="fa fa-pencil" aria-hidden="true"></i> Cancel Editing
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

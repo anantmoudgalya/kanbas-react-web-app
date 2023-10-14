@@ -1,0 +1,141 @@
+.df-main-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.df-flex-account {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  left: 75px;
+}
+
+.df-flex-account-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.df-account-profile {
+  position: relative;
+  left: 230px;
+}
+
+.df-profile-name {
+  padding-left: 20px;
+}
+
+.df-flex-navigation {
+  width: 77px;
+  background-color: black;
+  height: 100%;
+  position: fixed;
+}
+
+.df-flex-navigation ul {
+  padding-left: 0px;
+}
+
+.df-flex-navigation li {
+  list-style: none;
+  text-align: center;
+}
+
+.df-flex-navigation li img {
+  background-color: black;
+  height: 40px;
+  width: 50px;
+}
+
+.df-flex-navigation a {
+  text-decoration: none;
+  font-size: small;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.df-background-white {
+  background-color: white;
+}
+
+.df-background-grey {
+  color: grey;
+}
+
+.df-background-red {
+  color: red;
+}
+
+.df-color-black {
+  color: black;
+}
+
+.df-color-red {
+  color: red;
+}
+
+.df-color-white {
+  color: white;
+}
+
+.df-home-nav-text {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.df-account-navbar {
+  margin-left: 10px;
+  position: fixed;
+}
+
+.df-account-navbar ul {
+  padding-left: 0px;
+}
+
+.df-account-navbar li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.df-account-navbar a {
+  text-decoration: none;
+  padding-left: 8px;
+}
+
+.df-account-active {
+  border-left: 2px solid black;
+}
+
+.df-text-larger {
+  font-size: larger;
+}
+
+.df-account-profile-edit-button {
+  position: relative;
+  left: 50px;
+}
+
+.df-account-profile-edit {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 230px;
+}
+
+.abcd {
+  position: relative;
+  left: 250px;
+}
+
+.fg-size-larger {
+  font-size: larger;
+}
+
+.df-no-decoration {
+  text-decoration: none;
+}

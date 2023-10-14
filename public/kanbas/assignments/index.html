@@ -1,187 +1,591 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Kanbas Assignments</title>
+    <meta charset="UTF-8" />
+    <title>Kanbas</title>
+    <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
   </head>
+
   <body>
-    <table>
-      <tr>
-        <!-- First Column - Navigation Links -->
-        <td>
-          <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../home.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
+    <div class="df-main-layout">
+      <div class="df-flex-navigation">
+        <ul>
+          <li class="df-background-black mb-2 mt-2">
+            <img src="/images/NortheasternLogo.png" />
+          </li>
 
-        <!-- Second Column - Course Navigation Sidebar -->
-        <td>
-          <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="../assignments/index.html">Assignments</a></li>
-            <li><a href="../grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="../assignments/settings.html">Settings</a></li>
-          </ul>
-        </td>
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../account/account.html"
+              ><i class="fa fa-user fa-2x df-color-white" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../account/account.html">Account</a>
+          </li>
 
-        <!-- Third Column - Assignments Screen -->
-        <td>
-          <!-- Filter Options -->
-          <div style="display: flex; align-items: center; flex-direction: row;">
-            <input type="text" placeholder="Search For Assignments" />
-            <button>Group</button>
-            <button>Assignment</button>
-            <select style="height: 25px">
-              <option>Edit Assignment Dates</option>
-            </select>
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../dashboard/dashboard.html"
+              ><i
+                class="fa fa-tachometer fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../dashboard/dashboard.html">Dashboard</a>
+          </li>
+
+          <li class="df-home-nav-icon df-home-nav-active">
+            <a class="df-color-white" href="../courses/home.html"
+              ><i class="fa fa-book fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text df-home-nav-active">
+            <a class="df-color-white" href="../courses/home.html">Courses</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-calendar fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Calendar</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-inbox fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Inbox</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-history fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">History</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-desktop fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Studio</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-arrow-circle-o-right fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Commons</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-question-circle fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="df-flex-assignment-screen">
+        <div class="df-assignment-breadcrumb ms-2">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <i class="fa fa-bars" aria-hidden="true"></i> <a class="df-color-red" href="/kanbas/courses/home.html">CS5610.17367.202410</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Assignments
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- Flex row -->
+        <div class="df-courses-content">
+          <div class="df-flex-assignments-navbar">
+            <ul>
+              <li><a class="df-color-red" href="../courses/home.html">Home</a></li>
+              <li><a class="df-color-red" href="#">Modules</a></li>
+              <li><a class="df-color-red" href="#">Piazza</a></li>
+              <li><a class="df-color-red" href="#">Zoom Meetings</a></li>
+              <li>
+                <a class="df-assignment-nav-active" href="index.html"
+                  >Assignments</a
+                >
+              </li>
+              <li><a class="df-color-red" href="#">Quizzes</a></li>
+              <li>
+                <a class="df-color-red" href="../grades/grades.html">Grades</a>
+              </li>
+              <li><a class="df-color-red" href="#">People</a></li>
+              <li><a class="df-color-red" href="#">Panopto Video</a></li>
+              <li><a class="df-color-red" href="#">Discussions</a></li>
+              <li><a class="df-color-red" href="#">Announcements</a></li>
+              <li><a class="df-color-red" href="#">Pages</a></li>
+              <li><a class="df-color-red" href="#">Files</a></li>
+              <li><a class="df-color-red" href="#">Rubrics</a></li>
+              <li><a class="df-color-red" href="#">Outcomes</a></li>
+              <li><a class="df-color-red" href="#">Collaborations</a></li>
+              <li><a class="df-color-red" href="#">Syllabus</a></li>
+              <li>
+                <a class="df-color-red" href="../settings/course-details.html"
+                  >Settings</a
+                >
+              </li>
+            </ul>
           </div>
-          <hr/>
 
-          <!-- Assignment Section -->
-          <div style="display: flex; align-items: center; flex-direction: row;">
-            <h4>ASSIGNMENTS 40% of Total</h4>
-            <select style="height: 25px">
-              <option>Edit</option>
-              <option>Speed Grader</option>
-              <option>Duplicate</option>
-              <option>Delete</option>
-              <option>Move To</option>
-              <option>Send To</option>
-              <option>Copy To</option>
-              <option>Share to Commons</option>
-            </select>
-          </div>
-          <ul>
-            <li>
-              <a href="edit.html">A1 - ENV + HTML</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="edit.html">A2 - CSS + BOOTSTRAP</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="edit.html">A3 - JS + REACT</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="edit.html">A4 - STATE + REDUX</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="edit.html">A5 - NODE + SESSION</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="edit.html">A6 - MONGO + MONGOOSE</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-          </ul>
+          <div class="df-flex-course-assignments col-10">
+            <div class="df-course-assignments-header">
+              <input
+                class="form-control w-25 float-start"
+                type="text"
+                placeholder="Search for Assignment"
+              />
+              <div class="buttons float-end">
+                <button class="btn df-background-lightgray">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Group
+                </button>
+                <button class="btn btn-danger">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Assignment
+                </button>
+                <button class="btn df-background-lightgray">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="df-course-assignments-info">
+              <ul class="list-group mb-4">
+                <li class="list-group-item df-list-assignment-type">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i>
+                  Assignments
+                  <span class="df-check-ellipse-button-float-end float-end">
+                    <span class="df-custom-round-border me-2"
+                      >40% of total</span
+                    >
+                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">A1 - ENV + HTML</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Sep 18</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">A2 - CSS + Bootstrap</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Sep 25</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">A3 - JS + REACT </a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc">Due Oct 2</span>
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">A4 - STATE + REDUX </a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Oct 10</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">A5 - NODE + SESSION</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Oct 16</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">A6 - MONGO + MONGOOSE</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Oct 30</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+              </ul>
 
-          <!-- Quizzes Section -->
-          <div style="display: flex; align-items: center; flex-direction: row;">
-            <h4>QUIZZES 10% of Total</h4>
-            <select style="height: 25px">
-              <option>Edit</option>
-              <option>Speed Grader</option>
-              <option>Duplicate</option>
-              <option>Delete</option>
-              <option>Move To</option>
-              <option>Send To</option>
-              <option>Copy To</option>
-              <option>Share to Commons</option>
-            </select>
-          </div>
-          <ul>
-            <li>
-              <a href="#">Q1 - HTML</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="#">Q2 - CSS</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="#">Q3 - JS ES6</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="#">Q4 - NODE</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              <a href="#">Q5 - MONGO</a><br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-          </ul>
+              <ul class="list-group mb-4">
+                <li class="list-group-item df-list-assignment-type">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i>
+                  Quizzes
+                  <span class="df-check-ellipse-button-float-end float-end">
+                    <span class="df-custom-round-border me-2"
+                      >10% of total</span
+                    >
+                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Q1 - HTML</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Sep 18</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Q2 - CSS </a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Sep 25</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Q3 - JS, ES6 </a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc">Due Oct 2</span>
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Q4 - NODE </a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Oct 10</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Q5 - MONGO</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Oct 16</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+              </ul>
 
-          <!-- Exams Section -->
-          <div style="display: flex; align-items: center; flex-direction: row;">
-            <h4>EXAMS 20% of Total</h4>
-            <select style="height: 25px">
-              <option>Edit</option>
-              <option>Speed Grader</option>
-              <option>Duplicate</option>
-              <option>Delete</option>
-              <option>Move To</option>
-              <option>Send To</option>
-              <option>Copy To</option>
-              <option>Share to Commons</option>
-            </select>
-          </div>
-          <ul>
-            <li>
-              Midterm<br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-            <li>
-              Final<br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-          </ul>
+              <ul class="list-group mb-4">
+                <li class="list-group-item df-list-assignment-type">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i> Exams
+                  <span class="df-check-ellipse-button-float-end float-end">
+                    <span class="df-custom-round-border me-2"
+                      >20% of total</span
+                    >
+                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Midterm</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Oct 18</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Final </a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Dec 14</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+              </ul>
 
-          <!-- Project Section -->
-          <div style="display: flex; align-items: center; flex-direction: row;">
-            <h4>PROJECT 30% of Total</h4>
-            <select style="height: 25px">
-              <option>Edit</option>
-              <option>Speed Grader</option>
-              <option>Duplicate</option>
-              <option>Delete</option>
-              <option>Move To</option>
-              <option>Send To</option>
-              <option>Copy To</option>
-              <option>Share to Commons</option>
-            </select>
+              <ul class="list-group mb-4">
+                <li class="list-group-item df-list-assignment-type">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i>
+                  Project
+                  <span class="df-check-ellipse-button-float-end float-end">
+                    <span class="df-custom-round-border me-2"
+                      >30% of total</span
+                    >
+                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="list-group-item df-list-assignment-element">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i
+                    class="fa fa-pencil-square-o df-color-green ms-2"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="df-list-assignment-element-title"
+                    ><a href="edit.html">Final Project</a></span
+                  >
+                  <br />
+                  <span class="df-list-assignment-element-desc"
+                    >Due Dec 16</span
+                  >
+                  | 100 pts yet<span
+                    class="df-check-ellipse-button-float-end float-end"
+                  >
+                    <i
+                      class="fa fa-check-circle df-color-green"
+                      aria-hidden="true"
+                    >
+                    </i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul>
-            <li>
-              Project<br />
-              <a href="#">Multiple Modules</a> | Not available
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

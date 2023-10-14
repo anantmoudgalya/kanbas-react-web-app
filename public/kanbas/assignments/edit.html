@@ -1,129 +1,401 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Kanbas Assignments</title>
+    <meta charset="UTF-8" />
+    <title>Kanbas</title>
+    <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="edit.css" rel="stylesheet" />
   </head>
+
   <body>
-    <table>
-      <tr>
-        <!-- First Column - Navigation Links -->
-        <td>
-          <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../home.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
+    <div class="df-main-layout">
+      <div class="df-flex-navigation">
+        <ul>
+          <li class="df-background-black mb-2 mt-2">
+            <img src="/images/NortheasternLogo.png" />
+          </li>
 
-        <!-- Second Column - Course Navigation Sidebar -->
-        <td>
-          <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="index.html">Assignments</a></li>
-            <li><a href="../grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="settings.html">Settings</a></li>
-          </ul>
-        </td>
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../account/account.html"
+              ><i class="fa fa-user fa-2x df-color-white" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../account/account.html">Account</a>
+          </li>
 
-        <!-- Third Column - Assignments Screen -->
-        <td>
-            <td>
-                <h4>Assignment Name</h4>
-                <input type="text" placeholder="A1 - ENV + HTML" />
-            
-                <br/><br/>
-                <textarea id="assignmentDescription" placeholder="This is assignment description"></textarea>
-                
-                <br/><br/>
-                <label for="points">Points:</label><br/>
-                <input type="number" id="points" placeholder="100" />
-            
-                <p>Assignment Group</p>
-                <select>
-                    <option>ASSIGNMENTS</option>
-                </select>
-            
-                <p>Display Grade as</p>
-                <select>
-                    <option>Percentage</option>
-                </select>
-            
-                <p>Submission Type</p>
-                <select>
-                    <option>Online</option>
-                </select>
-            
-                <p>Online Entry Options</p>
-                <input type="checkbox" id="textEntry" name="textEntry" />
-                <label for="textEntry">Text Entry</label><br />
-                <input type="checkbox" id="websiteURL" name="websiteURL" />
-                <label for="websiteURL">Website URL</label><br />
-                <input type="checkbox" id="mediaRecordings" name="mediaRecordings" />
-                <label for="mediaRecordings">Media Recordings</label><br />
-                <input type="checkbox" id="studentAnnotation" name="studentAnnotation" />
-                <label for="studentAnnotation">Student Annotation</label><br />
-                <input type="checkbox" id="fileUploads" name="fileUploads" />
-                <label for="fileUploads">File Uploads</label><br />
-            
-                <p>Submission Attempts</p>
-                <select>
-                    <option>Unlimited</option>
-                </select>
-            
-                <p>Plagiarism Review</p>
-                <select>
-                    <option>None</option>
-                </select>
-                
-                <br/><br/>
-                <label for="groupAssignment">Group Assignment</label><br/>
-                <input type="checkbox" id="groupAssignment" name="groupAssignment">This is a group assignment</input>
-            
-                <br/><br/>
-                <label for="peerReviews">Peer Reviews</label><br/>
-                <input type="checkbox" id="peerReviews" name="peerReviews" >Require Peer Reviews</input>
-            
-                <p>Assign</p>
-                <label for="assignTo">Assign To:</label><br/>
-                <select id="assignTo">
-                    <option>Everyone</option>
-                </select>
-            
-                <p>Due</p>
-                <input type="date" />
-            
-                <p>Available From</p>
-                <input type="date" />
-            
-                <p>Until</p>
-                <input type="date" />
-            
-                <br/><br/>
-                <button type="button" onclick="window.location.href='index.html'">Cancel</button>
-                <button type="button" onclick="window.location.href='index.html'">Save</button>
-            </td>
-            
-        </td>
-      </tr>
-    </table>
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="../dashboard/dashboard.html"
+              ><i
+                class="fa fa-tachometer fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="../dashboard/dashboard.html">Dashboard</a>
+          </li>
+
+          <li class="df-home-nav-icon df-home-nav-active">
+            <a class="df-color-white" href="../courses/home.html"
+              ><i class="fa fa-book fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text df-home-nav-active">
+            <a class="df-color-white" href="../courses/home.html">Courses</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-calendar fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Calendar</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-inbox fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Inbox</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-history fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">History</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i class="fa fa-desktop fa-2x df-background-red" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Studio</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-arrow-circle-o-right fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Commons</a>
+          </li>
+
+          <li class="df-home-nav-icon">
+            <a class="df-color-white" href="#"
+              ><i
+                class="fa fa-question-circle fa-2x df-background-red"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="df-home-nav-text">
+            <a class="df-color-white" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="df-flex-assignment-screen">
+        <div class="df-assignment-breadcrumb ms-2">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <i class="fa fa-bars" aria-hidden="true"></i> <a class="df-color-red" href="/kanbas/courses/home.html">CS5610.17367.202410</a>
+              </li>
+              <li class="breadcrumb-item">Assignments</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                A1 - ENV + HTML
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- Flex row -->
+        <div class="df-courses-content">
+          <div class="df-flex-assignments-navbar">
+            <ul>
+              <li><a class="df-color-red" href="../courses/home.html">Home</a></li>
+              <li><a class="df-color-red" href="#">Modules</a></li>
+              <li><a class="df-color-red" href="#">Piazza</a></li>
+              <li><a class="df-color-red" href="#">Zoom Meetings</a></li>
+              <li>
+                <a class="df-assignment-nav-active" href="index.html"
+                  >Assignments</a
+                >
+              </li>
+              <li><a class="df-color-red" href="#">Quizzes</a></li>
+              <li>
+                <a class="df-color-red" href="../grades/grades.html">Grades</a>
+              </li>
+              <li><a class="df-color-red" href="#">People</a></li>
+              <li><a class="df-color-red" href="#">Panopto Video</a></li>
+              <li><a class="df-color-red" href="#">Discussions</a></li>
+              <li><a class="df-color-red" href="#">Announcements</a></li>
+              <li><a class="df-color-red" href="#">Pages</a></li>
+              <li><a class="df-color-red" href="#">Files</a></li>
+              <li><a class="df-color-red" href="#">Rubrics</a></li>
+              <li><a class="df-color-red" href="#">Outcomes</a></li>
+              <li><a class="df-color-red" href="#">Collaborations</a></li>
+              <li><a class="df-color-red" href="#">Syllabus</a></li>
+              <li>
+                <a class="df-color-red" href="../settings/course-details.html"
+                  >Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="df-flex-course-assignments col-10">
+            <div class="df-course-assignments-header">
+              <div class="buttons float-end">
+                <button class="btn btn-success">
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Published
+                </button>
+                <button class="btn df-background-lightgray">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="df-course-assignments-info">
+              <form>
+                <div class="form-group">
+                  <label for="df-assignment-name"> Assignment Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="df-assignment-name"
+                    value="A1 - ENV + HTML"
+                  />
+                </div>
+
+                <br />
+
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="df-assignment-desc"
+                    rows="4"
+                  >
+This assignment describes how to install the development environment for creatign and working with web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote sever hosted on Netlify.</textarea
+                  >
+                </div>
+
+                <br />
+
+                <div class="form-group row df-form-center">
+                  <label for="df-assignment-points" class="col-form-label col-3"
+                    >Points</label
+                  >
+                  <div class="col-6">
+                    <input
+                      class="form-control"
+                      type="text"
+                      value="100"
+                      id="df-assignment-points"
+                    />
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="form-group row df-form-center">
+                  <label for="df-assignment-group" class="col-form-label col-3"
+                    >Assignment Group</label
+                  >
+                  <div class="col-6">
+                    <select
+                      class="form-control form-select"
+                      id="df-assignment-group"
+                    >
+                      <option>ASSIGNMENTS</option>
+                    </select>
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="form-group row df-form-center">
+                  <label
+                    for="df-assignment-display-grade"
+                    class="col-form-label col-3"
+                    >Display Grade as</label
+                  >
+                  <div class="col-6">
+                    <select
+                      class="form-control form-select"
+                      id="df-assignment-display-grade"
+                    >
+                      <option>Percentage</option>
+                    </select>
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-6">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="df-assing-chkbx1"
+                    />
+                    <label class="form-check-label" for="df-assing-chkbx1">
+                      Do not count this assignment towards the final
+                      grade</label
+                    >
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="form-group row df-form-center mb-4">
+                  <div class="col-3">Submission Type</div>
+                  <div class="col-6">
+                    <div class="df-custom-round-border">
+                      <select class="form-control form-select">
+                        <option>Online</option>
+                      </select>
+                      <div
+                        class="df-assignment-online-entry"
+                        style="text-align: left"
+                      >
+                        Online Entry Options
+                        <br />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="chkbx-text"
+                          checked
+                        />
+                        <label class="form-check-label" for="chkbx-text"
+                          >Text Entry</label
+                        >
+                        <br />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="chkbx-web"
+                          checked
+                        />
+                        <label class="form-check-label" for="chkbx-web"
+                          >Website URL</label
+                        >
+                        <br />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="chkbx-media"
+                          checked
+                        />
+                        <label class="form-check-label" for="chkbx-media"
+                          >Media Recordings</label
+                        >
+                        <br />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="chkbx-annot"
+                        />
+                        <label class="form-check-label" for="chkbx-annot"
+                          >Student Annotation</label
+                        >
+                        <br />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="chkbx-file"
+                        />
+                        <label class="form-check-label" for="chkbx-file"
+                          >File Uploads</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row df-form-center mb-4">
+                  <div class="col-3">Assign</div>
+                  <div class="col-6">
+                    <div
+                      class="df-custom-round-border"
+                      style="text-align: left"
+                    >
+                      Assign to
+                      <br />
+                      <select class="form-control form-select">
+                        <option>Everyone</option>
+                      </select>
+                      <br />
+                      Due
+                      <br />
+                      <input
+                        class="form-control"
+                        type="text"
+                        value="07/25/2023"
+                      />
+                      <br />
+                      Available from
+                      <br />
+                      <input
+                        class="form-control"
+                        type="text"
+                        value="07/05/2023"
+                      />
+                      <br />
+                      Until
+                      <br />
+                      <input
+                        class="form-control"
+                        type="text"
+                        value="07/29/2023"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="df-footer mb-2">
+                  <hr />
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="df-footer-chkbx"
+                  />
+                  <label class="form-check-label" for="df-footer-chkbx">
+                    Notify users that this content has changed</label
+                  >
+                  <div class="df-footer-buttons float-end">
+                    <button class="btn btn-secondary">
+                      <a href="index.html" class="df-color-white"> Cancel </a>
+                    </button>
+                    <button class="btn btn-danger">
+                      <a href="index.html" class="df-color-white"> Save </a>
+                    </button>
+                  </div>
+                  <br />
+                  <br />
+                  <hr />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

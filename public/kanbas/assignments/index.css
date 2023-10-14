@@ -1,0 +1,164 @@
+.df-flex-navigation {
+  width: 77px;
+  background-color: black;
+  height: 100%;
+  position: fixed;
+}
+
+.df-flex-navigation ul {
+  padding-left: 0px;
+}
+
+.df-flex-navigation li {
+  list-style: none;
+  text-align: center;
+}
+
+.df-flex-navigation li img {
+  background-color: black;
+  height: 40px;
+  width: 50px;
+}
+
+.df-main-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.df-flex-navigation a {
+  text-decoration: none;
+  font-size: small;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.df-background-white {
+  background-color: white;
+}
+
+.df-background-grey {
+  color: grey;
+}
+
+.df-background-red {
+  color: red;
+}
+
+.df-color-red {
+  color: red;
+}
+
+.df-color-white {
+  color: white;
+}
+
+.df-home-nav-text {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.df-flex-navigation .df-home-nav-active {
+  background-color: white;
+}
+
+.df-flex-navigation .df-home-nav-active a {
+  color: red;
+}
+
+.df-flex-assignment-screen {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  left: 75px;
+}
+
+.df-assignment-nav-active {
+  border-left: 2px solid black;
+  color: black;
+}
+
+.df-courses-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.df-background-lightgray {
+  background-color: lightgray;
+}
+
+.df-flex-assignments-navbar {
+  margin-left: 20px;
+  position: fixed;
+}
+
+.df-flex-assignments-navbar ul {
+  padding-left: 0px;
+}
+
+.df-flex-assignments-navbar li {
+  list-style: none;
+  padding: 5px;
+}
+
+.df-flex-assignments-navbar a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.df-flex-course-assignments {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 200px;
+}
+
+.df-list-assignment-type {
+  background-color: lightgray;
+}
+
+li.list-group-item.df-list-assignment-element a {
+  text-decoration: none;
+  color: black;
+}
+
+.df-list-assignment-element .df-list-assignment-element-title {
+  font-weight: bold;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.df-list-assignment-element .df-list-assignment-element-desc {
+  padding-left: 10px;
+}
+
+.df-color-green {
+  color: green;
+}
+
+.df-flex-course-status {
+  padding-left: 25px;
+}
+
+.df-profile-name {
+  padding-left: 10px;
+}
+
+.df-background-black {
+  background-color: black;
+}
+
+.df-custom-round-border {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.df-course-assignments-info .df-list-assignment-element {
+  border-left: 4px solid green;
+}

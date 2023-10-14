@@ -1,0 +1,109 @@
+.df-flex-navigation {
+  width: 85px;
+  background-color: black;
+  height: 100%;
+  position: fixed;
+}
+
+.df-flex-navigation ul {
+  padding-left: 0px;
+}
+
+.df-flex-navigation li {
+  list-style: none;
+  text-align: center;
+}
+
+.df-flex-navigation li img {
+  background-color: black;
+  height: 40px;
+  width: 50px;
+}
+
+.df-main-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.df-flex-navigation a {
+  text-decoration: none;
+  font-size: small;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.df-background-white {
+  background-color: white;
+}
+
+.df-background-grey {
+  color: grey;
+}
+
+.df-background-red {
+  color: red;
+}
+
+.df-color-red {
+  color: red;
+}
+
+.df-color-white {
+  color: white;
+}
+
+.df-home-nav-text {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.df-flex-navigation .df-home-nav-active {
+  background-color: white;
+}
+
+.df-flex-navigation .df-home-nav-active a {
+  color: red;
+}
+
+.df-dashboard-screen {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  left: 75px;
+}
+
+.card {
+  width: 270px;
+}
+
+.col {
+  margin-bottom: 30px;
+}
+
+.df-dashboard-screen {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.df-dashboard-header {
+  font-size: x-large;
+  color: grey;
+}
+
+.df-dashboard-published-courses {
+  margin-left: 10px;
+}
+
+.row .col a {
+  text-decoration: none;
+}
+
+.card .card-body .card-title {
+  color: #0066ff;
+}
