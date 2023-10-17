@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/theme.css";
-import "font-awesome/css/font-awesome.css"
+import "font-awesome/css/font-awesome.css";
 
 function KanbasNavigation() {
   const baseUrl = "#/Kanbas";
@@ -57,6 +57,12 @@ function KanbasNavigation() {
 
   return (
     <div className="list-group kanbas-sidebar kanbas-column">
+      <a
+        className={`kanbas-no-underline kanbas-sidebar-unselected
+          kanbas-icon-padding`}
+      >
+        <img style={{ width: "75%" }} src="/images/NortheasternLogo.png" />
+      </a>
       {links.map((link, index) => (
         <a
           key={index}
