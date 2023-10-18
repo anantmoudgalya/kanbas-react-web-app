@@ -1,0 +1,128 @@
+[
+  {
+    "_id": "150",
+    "username": "iron_man",
+    "password": "ironman123",
+    "firstName": "Tony",
+    "lastName": "Stark",
+    "email": "tony_stark@example.com",
+    "dob": "1970-05-29"
+  },
+  {
+    "_id": "151",
+    "username": "captain_america",
+    "password": "captainamerica123",
+    "firstName": "Steve",
+    "lastName": "Rogers",
+    "email": "steve_rogers@example.com",
+    "dob": "1920-07-04"
+  },
+  {
+    "_id": "152",
+    "username": "black_widow",
+    "password": "blackwidow123",
+    "firstName": "Natasha",
+    "lastName": "Romanoff",
+    "email": "natasha_romanoff@example.com",
+    "dob": "1984-11-22"
+  },
+  {
+    "_id": "153",
+    "username": "thor",
+    "password": "thor123",
+    "firstName": "Thor",
+    "lastName": "Odinson",
+    "email": "thor@example.com",
+    "dob": "965"
+  },
+  {
+    "_id": "154",
+    "username": "hulk",
+    "password": "hulk123",
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "email": "bruce_banner@example.com",
+    "dob": "1969-12-18"
+  },
+  {
+    "_id": "155",
+    "username": "spider_man",
+    "password": "spiderman123",
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "email": "peter_parker@example.com",
+    "dob": "2002-08-10"
+  },
+  {
+    "_id": "156",
+    "username": "black_panther",
+    "password": "blackpanther123",
+    "firstName": "T'Challa",
+    "lastName": "Wakanda",
+    "email": "tchalla_wakanda@example.com",
+    "dob": "1978-02-16"
+  },
+  {
+    "_id": "157",
+    "username": "doctor_strange",
+    "password": "doctorstrange123",
+    "firstName": "Stephen",
+    "lastName": "Strange",
+    "email": "stephen_strange@example.com",
+    "dob": "1963-11-04"
+  },
+  {
+    "_id": "158",
+    "username": "scarlet_witch",
+    "password": "scarletwitch123",
+    "firstName": "Wanda",
+    "lastName": "Maximoff",
+    "email": "wanda_maximoff@example.com",
+    "dob": "1989-05-10"
+  },
+  {
+    "_id": "159",
+    "username": "thanos",
+    "password": "thanos123",
+    "firstName": "Thanos",
+    "lastName": "Mad Titan",
+    "email": "thanos@example.com",
+    "dob": "1973-02-19"
+  },
+  {
+    "_id": "160",
+    "username": "groot",
+    "password": "groot123",
+    "firstName": "Groot",
+    "lastName": "",
+    "email": "groot@example.com",
+    "dob": "1980-07-12"
+  },
+  {
+    "_id": "161",
+    "username": "deadpool",
+    "password": "deadpool123",
+    "firstName": "Wade",
+    "lastName": "Wilson",
+    "email": "wade_wilson@example.com",
+    "dob": "1971-02-20"
+  },
+  {
+    "_id": "162",
+    "username": "hawkeye",
+    "password": "hawkeye123",
+    "firstName": "Clint",
+    "lastName": "Barton",
+    "email": "clint_barton@example.com",
+    "dob": "1975-01-07"
+  },
+  {
+    "_id": "163",
+    "username": "ant_man",
+    "password": "antman123",
+    "firstName": "Scott",
+    "lastName": "Lang",
+    "email": "scott_lang@example.com",
+    "dob": "1966-09-15"
+  }
+]
