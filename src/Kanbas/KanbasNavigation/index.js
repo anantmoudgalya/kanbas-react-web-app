@@ -14,7 +14,7 @@ function KanbasNavigation() {
     {
       name: "Dashboard",
       url: `${baseUrl}/Dashboard`,
-      iconClass: "fa fa-tachometer kanbas-red",
+      iconClass: "fa-solid fa-gauge-high kanbas-red",
     },
     {
       name: "Courses",

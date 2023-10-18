@@ -1,5 +1,6 @@
 import db from "../Database";
 import "font-awesome/css/font-awesome.css";
+import "../styles/fontawesome-free-6.4.2-web/css/all.css";
 import "../styles/theme.css";
 
 const { courses } = db;
@@ -19,7 +20,7 @@ function Dashboard() {
             key={course._id}
           >
             <div className="card">
-              <div className={`card-header bg-${getCourseColor(course._id)}`}>
+              <div className={`card-header bg-${randomColorGenerator(course._id)}`}>
                 <i className="fa fa-ellipsis-vertical float-end kanbas-ellipsis"></i>
                 <br />
                 <br />
@@ -45,18 +46,24 @@ function getCourseTerm(startDate) {
   const year = date.getFullYear();
   const month = date.getMonth() + 1;
 
+  let term = "";
+
   if (month >= 1 && month <= 4) {
-    return `Spring ${year} Semester`;
+    term = "Spring";
   } else if (month >= 5 && month <= 8) {
-    return `Summer ${year} Semester`;
+    term = "Summer";
   } else if (month >= 9 && month <= 12) {
-    return `Fall ${year} Semester`;
+    term = "Fall";
+  }
+
+  if (term) {
+    return `${term} ${year} Semester`;
   }
 
   return "";
 }
 
-function getCourseColor(courseId) {
+function randomColorGenerator() {
   const colors = [
     "primary",
     "secondary",
@@ -66,7 +73,8 @@ function getCourseColor(courseId) {
     "info",
   ];
   const randomIndex = Math.floor(Math.random() * colors.length);
-  return colors[randomIndex];
+  const selectedColor = colors[randomIndex];
+  return selectedColor;
 }
 
 export default Dashboard;
