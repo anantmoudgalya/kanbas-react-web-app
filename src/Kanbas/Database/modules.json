@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "M101",
+    "name": "Advanced Rocket Propulsion Principles",
+    "description": "Exploring advanced concepts in rocket propulsion and engine technology.",
+    "course": "RS101"
+  },
+  {
+    "_id": "M102",
+    "name": "Propellant Chemistry and Ignition",
+    "description": "In-depth analysis of propellant chemistry, ignition mechanisms, and efficiency optimization.",
+    "course": "RS101"
+  },
+  {
+    "_id": "M103",
+    "name": "High-Performance Nozzle Design",
+    "description": "Mastering the art of high-performance nozzle design and performance enhancement.",
+    "course": "RS101"
+  },
+  {
+    "_id": "M201",
+    "name": "Advanced Aerodynamic Theory",
+    "description": "Advanced topics in aerodynamics, including fluid dynamics and boundary layer theory.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M202",
+    "name": "Hypersonic Aerodynamics",
+    "description": "Delving into the complexities of hypersonic aerodynamic behaviors and applications.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M203",
+    "name": "Aerodynamic Heating Solutions",
+    "description": "Advanced study of aerodynamic heating and innovative thermal protection systems.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M301",
+    "name": "Advanced Spacecraft Structural Design",
+    "description": "Mastering advanced techniques in spacecraft structural design and materials selection.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M302",
+    "name": "Interplanetary Orbital Mechanics",
+    "description": "Navigating the complexities of interplanetary orbital mechanics and mission planning.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M303",
+    "name": "Advanced Spacecraft Systems Engineering",
+    "description": "In-depth exploration of advanced spacecraft systems and subsystems engineering.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M401",
+    "name": "Web Development Fundamentals",
+    "description": "Foundations of web development, covering HTML and basic web design principles.",
+    "course": "RS104"
+  },
+  {
+    "_id": "M402",
+    "name": "Advanced CSS Styling and Bootstrap",
+    "description": "Exploring advanced CSS styling techniques and leveraging the Bootstrap framework.",
+    "course": "RS104"
+  },
+  {
+    "_id": "M403",
+    "name": "Interactive Web Components with JavaScript",
+    "description": "Creating interactive web components using advanced JavaScript techniques.",
+    "course": "RS104"
+  },
+  {
+    "_id": "M404",
+    "name": "Mastering React Framework",
+    "description": "In-depth mastery of the React framework for building dynamic web applications.",
+    "course": "RS104"
+  }
+]
