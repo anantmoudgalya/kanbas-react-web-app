@@ -1,0 +1,25 @@
+[
+  { "_id": "1", "student": "150", "assignment": "1", "grade": "95" },
+  { "_id": "2", "student": "153", "assignment": "1", "grade": "88" },
+  { "_id": "3", "student": "156", "assignment": "2", "grade": "92" },
+  { "_id": "4", "student": "151", "assignment": "2", "grade": "89" },
+  { "_id": "5", "student": "154", "assignment": "3", "grade": "94" },
+
+  { "_id": "6", "student": "151", "assignment": "4", "grade": "90" },
+  { "_id": "7", "student": "154", "assignment": "5", "grade": "87" },
+  { "_id": "8", "student": "157", "assignment": "5", "grade": "91" },
+  { "_id": "9", "student": "152", "assignment": "6", "grade": "90" },
+  { "_id": "10", "student": "155", "assignment": "6", "grade": "86" },
+
+  { "_id": "11", "student": "152", "assignment": "8", "grade": "93" },
+  { "_id": "12", "student": "155", "assignment": "9", "grade": "84" },
+  { "_id": "13", "student": "158", "assignment": "9", "grade": "97" },
+  { "_id": "14", "student": "153", "assignment": "7", "grade": "80" },
+  { "_id": "15", "student": "156", "assignment": "7", "grade": "78" },
+
+  { "_id": "16", "student": "159", "assignment": "10", "grade": "93" },
+  { "_id": "17", "student": "160", "assignment": "11", "grade": "84" },
+  { "_id": "18", "student": "161", "assignment": "12", "grade": "97" },
+  { "_id": "19", "student": "162", "assignment": "10", "grade": "80" },
+  { "_id": "20", "student": "163", "assignment": "12", "grade": "78" }
+]

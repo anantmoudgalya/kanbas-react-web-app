@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "1",
+    "title": "Rocket Propulsion Fundamentals",
+    "course": "RS101"
+  },
+  {
+    "_id": "2",
+    "title": "Advanced Rocket Propulsion Analysis",
+    "course": "RS101"
+  },
+  {
+    "_id": "3",
+    "title": "Rocket Propulsion Practical Application",
+    "course": "RS101"
+  },
+
+  {
+    "_id": "4",
+    "title": "Aerodynamics Basics Assignment",
+    "course": "RS102"
+  },
+  {
+    "_id": "5",
+    "title": "Advanced Aerodynamics Project",
+    "course": "RS102"
+  },
+  {
+    "_id": "6",
+    "title": "Aerodynamic Performance Assessment",
+    "course": "RS102"
+  },
+
+  {
+    "_id": "7",
+    "title": "Spacecraft Design Principles Lab",
+    "course": "RS103"
+  },
+  {
+    "_id": "8",
+    "title": "Orbital Mechanics Problem Set",
+    "course": "RS103"
+  },
+  {
+    "_id": "9",
+    "title": "Spacecraft Systems Engineering Assessment",
+    "course": "RS103"
+  },
+
+  {
+    "_id": "10",
+    "title": "Web Development Introduction Assignment",
+    "course": "RS104"
+  },
+  {
+    "_id": "11",
+    "title": "CSS Styling and Design Project",
+    "course": "RS104"
+  },
+  {
+    "_id": "12",
+    "title": "React Web Development Challenge",
+    "course": "RS104"
+  }
+]
