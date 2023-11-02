@@ -5,7 +5,14 @@ import "../styles/theme.css";
 
 const { courses } = db;
 
-function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, updateCourse }) {
+function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse,
+}) {
   return (
     <div className="kanbas-column" style={{ width: "75%" }}>
       <h1>Dashboard</h1>
@@ -55,7 +62,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
             key={course._id}
           >
             <div className="card">
-              <div className={`card-header bg-${randomColorGenerator(index)}`}>
+              <div className={`card-header bg-${randomColorGenerator()}`}>
                 <i className="fa fa-ellipsis-vertical float-end kanbas-ellipsis"></i>
                 <br />
                 <br />
@@ -116,7 +123,7 @@ function getCourseTerm(startDate) {
   return "";
 }
 
-function randomColorGenerator(index) {
+function randomColorGenerator() {
   const colors = [
     "primary",
     "secondary",
@@ -125,7 +132,8 @@ function randomColorGenerator(index) {
     "warning",
     "info",
   ];
-  const selectedColor = colors[index % colors.length];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  const selectedColor = colors[randomIndex];
   return selectedColor;
 }
 
