@@ -62,7 +62,7 @@ function Dashboard({
             key={course._id}
           >
             <div className="card">
-              <div className={`card-header bg-${randomColorGenerator()}`}>
+              <div className={`card-header bg-${randomColorGenerator(index)}`}>
                 <i className="fa fa-ellipsis-vertical float-end kanbas-ellipsis"></i>
                 <br />
                 <br />
@@ -123,7 +123,7 @@ function getCourseTerm(startDate) {
   return "";
 }
 
-function randomColorGenerator() {
+function randomColorGenerator(index) {
   const colors = [
     "primary",
     "secondary",
@@ -131,9 +131,10 @@ function randomColorGenerator() {
     "danger",
     "warning",
     "info",
+    "light",
+    "dark",
   ];
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  const selectedColor = colors[randomIndex];
+  const selectedColor = colors[index % colors.length];
   return selectedColor;
 }
 
