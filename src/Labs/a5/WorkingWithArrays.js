@@ -1,4 +1,5 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 function WorkingWithArrays() {
   const [todo, setTodo] = useState({
     id: 1,
@@ -7,6 +8,31 @@ function WorkingWithArrays() {
     due: "2021-09-09",
     completed: false,
   });
+  const [todos, setTodos] = useState([]);
+  const fetchTodos = async () => {
+    const response = await axios.get(API);
+    setTodos(response.data);
+  };
+  useEffect(() => {
+    fetchTodos();
+  }, []);
+
+  const removeTodo = async (todo) => {
+    const response = await axios.get(`${API}/${todo.id}/delete`);
+    setTodos(response.data);
+  };
+  const createTodo = async () => {
+    const response = await axios.get(`${API}/create`);
+    setTodos(response.data);
+  };
+  const fetchTodoById = async (id) => {
+    const response = await axios.get(`${API}/${id}`);
+    setTodo(response.data);
+  };
+  const updateTitle = async () => {
+    const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
+    setTodos(response.data);
+  };
 
   const API = "http://localhost:4000/a5/todos";
   return (
@@ -34,6 +60,33 @@ function WorkingWithArrays() {
         className="form-control mb-2"
         type="text"
       />
+      <button onClick={createTodo} className="btn btn-primary mb-2 w-100">
+        Create Todo
+      </button>
+      <button onClick={updateTitle} className="btn btn-success mb-2 w-100">
+        Update Title
+      </button>
+
+      <ul className="list-group">
+        {todos.map((todo) => (
+          <li key={todo.id} className="list-group-item">
+            <button
+              onClick={() => fetchTodoById(todo.id)}
+              className="btn btn-warning me-2 float-end"
+            >
+              Edit
+            </button>
+            <button
+              onClick={() => removeTodo(todo)}
+              className="btn btn-danger float-end"
+            >
+              Remove
+            </button>
+            {todo.title}
+          </li>
+        ))}
+      </ul>
+
       <h3>Updating an Item in an Array</h3>
       <a
         href={`${API}/${todo.id}/title/${todo.title}`}
