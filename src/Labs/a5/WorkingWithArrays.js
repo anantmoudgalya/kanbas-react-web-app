@@ -30,10 +30,6 @@ function WorkingWithArrays() {
     const response = await axios.get(`${API}/${id}`);
     setTodo(response.data);
   };
-  const updateTitle = async () => {
-    const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
-    setTodos(response.data);
-  };
   const deleteTodo = async (todo) => {
     try {
       const response = await axios.delete(`${API}/${todo.id}`);
