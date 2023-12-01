@@ -21,6 +21,10 @@ function Account() {
   const save = async () => {
     await client.updateUser(account);
   };
+  const signout = async () => {
+    await client.signout();
+    navigate("/kanbas/signin");
+  };
 
   useEffect(() => {
     fetchAccount();
@@ -113,10 +117,18 @@ function Account() {
               <option value="STUDENT">Student</option>
             </select>
           </div>
-          <button type="button" className="btn btn-primary w-100" onClick={save}>
+          <button
+            type="button"
+            className="btn btn-primary w-100"
+            onClick={save}
+          >
             Save
           </button>
-          <br/><br/>
+          <br />
+          <br />
+          <button onClick={signout} className="btn btn-danger w-100">Signout</button>
+          <br />
+          <br />
           <Link to="/Kanbas/admin/users" className="btn btn-warning w-100">
             Users
           </Link>
