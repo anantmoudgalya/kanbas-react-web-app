@@ -1,6 +1,16 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { Button } from "bootstrap";
+
+const formatDate = (dateString) => {
+  const date = new Date(dateString);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
+
 function Account() {
   const [account, setAccount] = useState(null);
   const navigate = useNavigate();
@@ -8,6 +18,10 @@ function Account() {
     const account = await client.account();
     setAccount(account);
   };
+  const save = async () => {
+    await client.updateUser(account);
+  };
+
   useEffect(() => {
     fetchAccount();
   }, []);
@@ -66,7 +80,7 @@ function Account() {
               type="date"
               id="dob"
               className="form-control"
-              value={account.dob}
+              value={formatDate(account.dob)}
               onChange={(e) => setAccount({ ...account, dob: e.target.value })}
             />
           </div>
@@ -99,6 +113,13 @@ function Account() {
               <option value="STUDENT">Student</option>
             </select>
           </div>
+          <button type="button" className="btn btn-primary w-100" onClick={save}>
+            Save
+          </button>
+          <br/><br/>
+          <Link to="/Kanbas/admin/users" className="btn btn-warning w-100">
+            Users
+          </Link>
         </div>
       )}
     </div>
