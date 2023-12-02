@@ -51,6 +51,18 @@ function KanbasNavigation() {
       url: `${baseUrl}/Help`,
       iconClass: "fa fa-question kanbas-red",
     },
+    {
+      id: "Signin",
+      name: "Sign In",
+      url: `${baseUrl}/Signin`,
+      iconClass: "fa fa-right-to-bracket kanbas-red",
+    },
+    {
+      id: "Signup",
+      name: "Sign Up",
+      url: `${baseUrl}/Signup`,
+      iconClass: "fa fa-user-plus kanbas-red",
+    },
   ];
 
   const { pathname } = useLocation();
